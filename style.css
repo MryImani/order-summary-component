@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url('./images/pattern-background-desktop.svg') no-repeat,#E1E9FF;
+    background-size: contain;
+    font-family: "Red Hat Display";
+    
+}
+.container{
+    width: 50%;
+    margin:5rem auto;
+    text-align: center;
+    
+}
+.order-item{
+    width: 60%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 10px 10px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+   
+}
+.order-item .img{
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.order-item .content{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+     justify-content: space-between;
+}
+.order-item .content p{
+    color: #85859b;
+    font-size: 1rem;
+ 
+}
+.order-item .content .title{
+    font-weight: 900;
+    color: #3B3F54;
+}
+.order-item .content .description{
+    padding: 0 2rem;
+    font-size: 500;
+}
+.order-item .content .plan{
+    border-radius: 0.8rem;
+    display: flex;
+    gap: 1rem;
+    background-color: #F9F9FB;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    padding:1.2rem;
+}
+.order-item .content .plan > div{
+    display: flex;
+    align-items: center;
+}
+.order-item .content .plan > div > div{
+    margin-left: 1rem;
+}
+.order-item .content .plan > div > div h3{
+    color: #3B3F54;
+    font-weight: 700 ;
+}
+.order-item .content .plan > div > div h3,.order-item .content .plan > div > div p{
+    margin: 0.5rem 0;
+}
+.order-item .content .plan .change-link{
+    color: #3829E7 ;
+    font-weight: 700;
+}
+.order-item .content .plan .change-link:hover{
+    color: #766CF1;
+    text-decoration: none;
+}
+.payment-btn{
+    width: 100%;
+    background-color: #3829E7;
+    border-radius: 0.8rem;
+    padding: 1rem 0;
+    border: none;
+    margin: 1rem 0;
+    box-shadow: 0px 15px 8px 8px rgba(222,210,249,0.3);
+  
+}
+.payment-btn:hover{
+    background-color:#766CF1
+}
+.payment-btn a{
+    text-decoration: none;
+      color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.cancel-btn{
+    margin: 1rem 0;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    color: #85859b;
+     font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.cancel-btn:hover{
+    color: #3B3F54;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media  (max-width:1240px) {
+    .container{
+        width: 80%;
+    }
+    .order-item{
+        width: 50%;
+    }
+    
+}
+@media  (max-width:992px) {
+    .container{
+        width: 70%;
+    }
+    .order-item{
+        width: 70%;
+    }
+    
+}
+@media  (max-width:768px) {
+    .container{
+        width: 100%;
+    }
+    .order-item{
+        width: 60%;
+    }
+    
+}
+
+@media  (max-width:516px) {
+    .container{
+        width: 100%;
+    }
+    .order-item{
+        width: 90%;
+    }
+    .order-item .content .plan{
+        padding: 0.8rem;
+    }
+    .order-item .content .plan h3{
+        font-weight: 500;
+    }
+    
+}
+
